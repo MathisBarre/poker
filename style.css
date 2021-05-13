@@ -1,0 +1,69 @@
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main {
+  /* height: 812px; */
+  /* width: 375px; */
+  background-color: white;
+  border-radius: 4px;
+  font-family: 'Domine', sans-serif;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  min-height: 8px;
+  min-width: 2px;
+  gap: 1em;
+  flex: 1;
+  margin-top: 1rem;
+  width: 85%;
+}
+
+.card {
+  border: rgba(0, 0, 0, 0.267) 1px solid;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.061);
+  padding: 0.4rem 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  min-height: 3.5rem;
+  min-width: 2.5rem;
+}
+
+.heart {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+}
+
+.little-heart {
+  color: #e81224;
+  position: relative;
+}
+
+.little-heart::after {
+  content: "❤️";
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  font-size: .9rem;
+}
