@@ -1,15 +1,13 @@
 body {
-  /* display: flex; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: grey;
   min-height: 100vh;
   margin: 0;
 }
 
 .main {
-  /* height: 812px; */
-  /* width: 375px; */
   background-color: white;
   border-radius: 4px;
   font-family: 'Domine', sans-serif;
@@ -17,11 +15,19 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
+  align-items: flex-start;
 }
 
 .title {
   margin: 0;
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .cards {
@@ -31,9 +37,8 @@ body {
   min-height: 8px;
   min-width: 2px;
   gap: 1em;
-  flex: 1;
-  margin-top: 1rem;
-  width: 85%;
+  /* margin-top: 1rem; */
+  /* width: 100%; */
 }
 
 .card {
@@ -43,8 +48,9 @@ body {
   padding: 0.4rem 0 0 0.5rem;
   font-size: 1.5rem;
   font-weight: 900;
-  min-height: 3.5rem;
-  min-width: 2.5rem;
+  height: 4.5rem;
+  width: 3.5rem;
+  box-sizing: border-box;
 }
 
 .heart {
